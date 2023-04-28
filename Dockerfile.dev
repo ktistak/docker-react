@@ -1,0 +1,16 @@
+#specify a base image
+FROM node:16-alpine
+
+#specify a working dir inside the container
+WORKDIR '/app'
+
+
+#install some dependencies
+COPY package.json .
+RUN npm install
+
+#copy local files (not necessary for a dev dockerfile)
+COPY . .
+
+#setup a default command
+CMD ["npm", "run", "start"]
