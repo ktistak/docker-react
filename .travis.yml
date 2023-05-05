@@ -16,6 +16,6 @@ deploy:
   bucket_name: "elasticbeanstalk-eu-north-1-546455860366"
   bucket_path: "ktistak-docker-app" 
   on:
-    branch: master
+    branch: main
   access_key_id: $AWS_ACCESS_KEY
   secrete_access_key: "$AWS_ACCESS_KEY"
